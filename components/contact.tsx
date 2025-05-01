@@ -1,60 +1,10 @@
-"use client"
-
-import type React from "react"
-
-import { useState } from "react"
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
 
 export default function Contact() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-  const { toast } = useToast()
-  const [isSubmitting, setIsSubmitting] = useState(false)
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  }
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    })
-
-    setIsSubmitting(false)
-    e.currentTarget.reset()
-  }
-
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
@@ -77,61 +27,67 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" ref={ref} className="py-20 bg-muted/30">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container px-4 md:px-6">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="space-y-12"
-        >
-          <motion.div variants={itemVariants} className="space-y-4 text-center">
+        <div className="space-y-12">
+          <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Have a project in mind or want to discuss opportunities? I'd love to hear from you!
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div variants={containerVariants} className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
-            <motion.div variants={itemVariants} className="lg:col-span-2">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+            <div className="lg:col-span-2">
               <Card>
                 <CardContent className="p-6">
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form action="https://formspree.io/f/your-form-id" method="POST" className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium">
                           Name
                         </label>
-                        <Input id="name" placeholder="Your name" required />
+                        <Input id="name" name="name" placeholder="Your name" required />
                       </div>
                       <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-medium">
                           Email
                         </label>
-                        <Input id="email" type="email" placeholder="Your email" required />
+                        <Input id="email" name="email" type="email" placeholder="Your email" required />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="subject" className="text-sm font-medium">
                         Subject
                       </label>
-                      <Input id="subject" placeholder="Subject of your message" required />
+                      <Input id="subject" name="subject" placeholder="Subject of your message" required />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="message" className="text-sm font-medium">
                         Message
                       </label>
-                      <Textarea id="message" placeholder="Your message" className="min-h-[150px]" required />
+                      <Textarea
+                        id="message"
+                        name="message"
+                        placeholder="Your message"
+                        className="min-h-[150px]"
+                        required
+                      />
                     </div>
-                    <Button type="submit" className="w-full" disabled={isSubmitting}>
-                      {isSubmitting ? "Sending..." : "Send Message"}
+                    <Button type="submit" className="w-full">
+                      Send Message
                     </Button>
+                    <noscript>
+                      <p className="text-sm text-center text-muted-foreground mt-2">
+                        Please enable JavaScript to use the form, or email me directly.
+                      </p>
+                    </noscript>
                   </form>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
-            <motion.div variants={itemVariants} className="space-y-6">
+            <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <Card key={index} className="overflow-hidden">
                   <CardContent className="p-6 flex items-start gap-4">
@@ -161,7 +117,7 @@ export default function Contact() {
                   <p className="text-sm text-muted-foreground mb-4">Find me on these platforms</p>
                   <div className="flex gap-4">
                     <Button variant="outline" size="icon" asChild>
-                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://github.com/maskeynihal" target="_blank" rel="noopener noreferrer">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -181,7 +137,7 @@ export default function Contact() {
                       </a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://linkedin.com/in/maskeynihal" target="_blank" rel="noopener noreferrer">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -224,9 +180,9 @@ export default function Contact() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -1,37 +1,9 @@
-"use client"
-
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Github, GitPullRequest } from "lucide-react"
 import Link from "next/link"
 
 export default function OpenSource() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.1 })
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  }
-
   const contributions = [
     {
       title: "DynamoDB Dashboard",
@@ -57,23 +29,18 @@ export default function OpenSource() {
   ]
 
   return (
-    <div id="open-source" ref={ref}>
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        className="space-y-12"
-      >
-        <motion.div variants={itemVariants} className="space-y-4 text-center">
+    <div id="open-source">
+      <div className="space-y-12">
+        <div className="space-y-4 text-center">
           <h3 className="text-2xl font-bold tracking-tighter sm:text-3xl">Open Source Contributions</h3>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed">
             Projects I've contributed to in the open source community
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           {contributions.map((contribution, index) => (
-            <motion.div key={index} variants={itemVariants}>
+            <div key={index}>
               <Card className="h-full flex flex-col">
                 <CardContent className="p-6 flex-1 flex flex-col">
                   <div className="mb-4">
@@ -95,10 +62,10 @@ export default function OpenSource() {
                   </Button>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,35 +1,7 @@
-"use client"
-
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function Experience() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.1 })
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  }
-
   const experiences = [
     {
       title: "Lead Engineer",
@@ -109,31 +81,19 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" ref={ref} className="py-20">
+    <section id="experience" className="py-20">
       <div className="container px-4 md:px-6">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="space-y-12"
-        >
-          <motion.div variants={itemVariants} className="space-y-4 text-center">
+        <div className="space-y-12">
+          <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experience</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               My professional journey and key accomplishments
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div variants={containerVariants} className="space-y-8 mt-12">
+          <div className="space-y-8 mt-12">
             {experiences.map((experience, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="timeline-item"
-                initial={{ opacity: 0, x: -20 }}
-                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
+              <div key={index} className="timeline-item">
                 <Card className="border-l-4 border-l-primary transition-all duration-300 hover:shadow-lg">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -158,10 +118,10 @@ export default function Experience() {
                     </ul>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   )

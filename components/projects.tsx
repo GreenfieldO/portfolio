@@ -1,7 +1,3 @@
-"use client"
-
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
@@ -9,30 +5,6 @@ import Link from "next/link"
 import OpenSource from "./open-source"
 
 export default function Projects() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.1 })
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  }
-
   const projects = [
     {
       title: "Pacman",
@@ -67,27 +39,19 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" ref={ref} className="py-20">
+    <section id="projects" className="py-20">
       <div className="container px-4 md:px-6">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="space-y-12"
-        >
-          <motion.div variants={itemVariants} className="space-y-4 text-center">
+        <div className="space-y-12">
+          <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Projects</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               A selection of my personal and professional projects
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {projects.map((project, index) => (
-              <motion.div key={index} variants={itemVariants} className="project-card">
+              <div key={index} className="project-card">
                 <Card className="overflow-hidden h-full flex flex-col">
                   <CardContent className="project-content flex-1 flex flex-col p-5">
                     <h3 className="text-lg font-bold">{project.title}</h3>
@@ -115,15 +79,15 @@ export default function Projects() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
           {/* Include Open Source section directly under Projects */}
           <div className="mt-20">
             <OpenSource />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

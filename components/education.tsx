@@ -1,52 +1,19 @@
-"use client"
-
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCap } from "lucide-react"
 
 export default function Education() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  }
-
   return (
-    <section id="education" ref={ref} className="py-20">
+    <section id="education" className="py-20">
       <div className="container px-4 md:px-6">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="space-y-12"
-        >
-          <motion.div variants={itemVariants} className="space-y-4 text-center">
+        <div className="space-y-12">
+          <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Education</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               My academic background and qualifications
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div variants={itemVariants} className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="bg-primary/10 p-6 flex items-center gap-4">
@@ -67,8 +34,8 @@ export default function Education() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   )
