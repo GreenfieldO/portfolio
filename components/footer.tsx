@@ -6,7 +6,6 @@ export default function Footer() {
       <div className="container flex flex-col items-center justify-center gap-4 text-center md:gap-6">
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">&copy; {currentYear} Nihal Maskey. All rights reserved.</p>
-          <p className="text-xs text-muted-foreground">Built with Next.js, Tailwind CSS, and Static Site Generation</p>
         </div>
       </div>
     </footer>

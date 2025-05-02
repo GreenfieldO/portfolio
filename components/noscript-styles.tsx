@@ -21,18 +21,27 @@ export default function NoScriptStyles() {
           transform: none !important;
         }
         
-        /* Ensure the header is visible */
-        .sticky-header {
-          position: sticky;
-          top: 0;
-          background-color: rgba(255, 255, 255, 0.9);
-          backdrop-filter: blur(10px);
-          z-index: 50;
+        /* Ensure the header is visible and fixed with glassmorphism */
+        header {
+          position: fixed !important;
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          background-color: rgba(255, 255, 255, 0.7) !important;
+          backdrop-filter: blur(10px) !important;
+          z-index: 50 !important;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+        }
+
+        /* Add padding to the body to account for the fixed header */
+        body {
+          padding-top: 4rem !important; /* 64px, matches the header height */
         }
         
         /* Dark mode adjustments */
-        .dark .sticky-header {
-          background-color: rgba(0, 0, 0, 0.8);
+        .dark header {
+          background-color: rgba(0, 0, 0, 0.7) !important;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
         }
         
         /* Ensure mobile menu is accessible */

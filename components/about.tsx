@@ -26,7 +26,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-20 bg-muted/30 w-full">
       <div className="container px-4 md:px-6">
         <div className="space-y-12">
           <div className="space-y-4 text-center">

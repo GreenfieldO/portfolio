@@ -1,5 +1,7 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
-import { ArrowDownCircle, Download, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowUpCircle, Download, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 
 export default function Hero() {
@@ -47,7 +49,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="mailto:maskeynihal@gmail.com">
+              <Link href="mailto:t3w4e0rdaf6f@opayq.com">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -55,8 +57,14 @@ export default function Hero() {
           </div>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block js-only">
-          <Link href="#about">
-            <ArrowDownCircle className="h-10 w-10 text-primary animate-bounce" />
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault()
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}
+          >
+            <ArrowUpCircle className="h-10 w-10 text-primary animate-bounce" />
           </Link>
         </div>
       </div>

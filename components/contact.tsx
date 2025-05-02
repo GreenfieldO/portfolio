@@ -9,8 +9,8 @@ export default function Contact() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      value: "maskeynihal@gmail.com",
-      link: "mailto:maskeynihal@gmail.com",
+      value: "t3w4e0rdaf6f@opayq.com",
+      link: "mailto:t3w4e0rdaf6f@opayq.com",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
@@ -41,7 +41,7 @@ export default function Contact() {
             <div className="lg:col-span-2">
               <Card>
                 <CardContent className="p-6">
-                  <form action="https://formspree.io/f/your-form-id" method="POST" className="space-y-6">
+                  <form action="https://formspree.io/f/xanoenzo" method="POST" className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium">
@@ -158,7 +158,7 @@ export default function Contact() {
                       </a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <a href="mailto:maskeynihal@gmail.com">
+                      <a href="mailto:t3w4e0rdaf6f@opayq.com">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Skills from "./skills-content"
 
 export default function Experience() {
   const experiences = [
@@ -85,7 +86,7 @@ export default function Experience() {
       <div className="container px-4 md:px-6">
         <div className="space-y-12">
           <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experience</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Experience</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               My professional journey and key accomplishments
             </p>
@@ -120,6 +121,11 @@ export default function Experience() {
                 </Card>
               </div>
             ))}
+          </div>
+
+          {/* Skills Section */}
+          <div className="mt-20" id="skills">
+            <Skills />
           </div>
         </div>
       </div>
