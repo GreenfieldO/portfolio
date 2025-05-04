@@ -1,6 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { Analytics } from "@/components/analytics"
 import ClientLayout from "./client"
+import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "Nihal Maskey | Senior Software Engineer",
@@ -46,7 +48,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <ClientLayout>{children}</ClientLayout>
+  return (
+    <>
+      <Suspense>
+        <ClientLayout>{children}</ClientLayout>
+      </Suspense>
+      <Analytics />
+    </>
+  )
 }
 
 
