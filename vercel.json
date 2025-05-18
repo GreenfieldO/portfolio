@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path((?!index|_next|static|favicon.ico|robots.txt|sitemap.xml).*)",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
