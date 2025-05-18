@@ -24,6 +24,7 @@ export default function ClientLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <NoScriptStyles />
+        <link rel="manifest" href="/manifest.json" />
         <style jsx global>{`
           :root {
             --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

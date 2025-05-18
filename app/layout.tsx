@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Nihal Maskey" }],
   creator: "Nihal Maskey",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -28,6 +35,14 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Nihal Maskey, a Senior Software Engineer specializing in JavaScript, TypeScript, React.js, Node.js, Laravel, and AWS.",
     siteName: "Nihal Maskey Portfolio",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 512,
+        height: 512,
+        alt: "Nihal Maskey Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -35,6 +50,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Nihal Maskey, a Senior Software Engineer specializing in JavaScript, TypeScript, React.js, Node.js, Laravel, and AWS.",
     creator: "@maskeynihal",
+    images: ["/favicon.png"],
   },
   robots: {
     index: true,
