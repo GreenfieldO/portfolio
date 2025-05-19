@@ -9,8 +9,8 @@ export default function Contact() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      value: "t3w4e0rdaf6f@opayq.com",
-      link: "mailto:t3w4e0rdaf6f@opayq.com",
+      value: "contact@nihal.com.np",
+      link: "mailto:contact@nihal.com.np",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
@@ -159,7 +159,7 @@ export default function Contact() {
                         </a>
                       </Button>
                       <Button variant="outline" size="icon" asChild>
-                        <a href="mailto:t3w4e0rdaf6f@opayq.com">
+                        <a href="mailto:contact@nihal.com.np">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
