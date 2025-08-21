@@ -55,25 +55,25 @@ export default function SkillsVisualization() {
       skills: [
         {
           name: "JavaScript",
-          level: "Expert",
-          percentage: 95,
+          level: "Intermediate",
+          percentage: 55,
           description: "ES6+, DOM manipulation, async programming, closures, and functional concepts",
         },
         {
           name: "TypeScript",
-          level: "Expert",
-          percentage: 90,
+          level: "Intermediate",
+          percentage: 70,
           description: "Type systems, interfaces, generics, and advanced type manipulations",
         },
         {
           name: "React.js",
-          level: "Expert",
-          percentage: 92,
+          level: "Intermediate",
+          percentage: 52,
           description: "Hooks, context, state management, performance optimization, and custom hooks",
         },
         {
           name: "HTML/CSS",
-          level: "Expert",
+          level: "Advanced",
           percentage: 90,
           description: "Semantic HTML, CSS Grid, Flexbox, animations, and responsive design",
         },
@@ -113,12 +113,6 @@ export default function SkillsVisualization() {
           level: "Expert",
           percentage: 90,
           description: "Event loop, streams, async patterns, and performance optimization",
-        },
-        {
-          name: "PHP",
-          level: "Advanced",
-          percentage: 80,
-          description: "OOP, modern PHP practices, and framework integration",
         },
         {
           name: "Laravel",
@@ -168,6 +162,8 @@ export default function SkillsVisualization() {
           percentage: 85,
           description: "Query optimization, indexing, transactions, and stored procedures",
         },
+        
+
         {
           name: "PostgreSQL",
           level: "Advanced",
@@ -227,10 +223,16 @@ export default function SkillsVisualization() {
           description: "CI/CD pipelines, workflow automation, and deployment strategies",
         },
         {
-          name: "Travis-CI",
+          name: "Jenkins",
           level: "Intermediate",
           percentage: 70,
-          description: "Build configuration, test automation, and deployment integration",
+          description: "Pipeline as code, job configuration, and plugin management",
+        },
+        {
+          name: "Ansible",
+          level: "Advanced",
+          percentage: 80,
+          description: "Configuration management, playbooks, and role-based automation",
         },
         {
           name: "Docker",
@@ -285,7 +287,7 @@ export default function SkillsVisualization() {
           description: "Sprint planning, daily standups, and team facilitation",
         },
         {
-          name: "JIRA",
+          name: "Porject Management",
           level: "Advanced",
           percentage: 80,
           description: "Project tracking, workflow customization, and reporting",
@@ -293,7 +295,7 @@ export default function SkillsVisualization() {
         {
           name: "Figma",
           level: "Intermediate",
-          percentage: 70,
+          percentage: 60,
           description: "Design collaboration, prototyping, and developer handoff",
         },
       ],

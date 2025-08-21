@@ -21,17 +21,33 @@ export default function Education() {
                     <GraduationCap className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Bachelor of Engineering: Computer Engineering</h3>
-                    <p className="text-muted-foreground">Kantipur Engineering College (2021)</p>
+                    <h3 className="text-xl font-bold">Bachelor of Science: Information Technology</h3>
+                    <p className="text-muted-foreground">BlueCrest University College (2022)</p>
                   </div>
                 </div>
                 <div className="p-6">
                   <p className="text-muted-foreground">
-                    Completed a comprehensive computer engineering program with a focus on software development,
-                    algorithms, data structures, and system design. Gained a strong foundation in computer science
-                    principles and engineering practices that have been instrumental in my professional career.
+                    Completed a study in Information Technology with a focus on software engineering, web development,
+                    and database management. Gained practical experience through projects and internships, deepening and enhancing my
+                    understanding of modern technologies and software development practices.
                   </p>
                 </div>
+
+                <div className="bg-primary/10 p-6 flex items-center gap-4">
+                  <div className="bg-primary/20 p-3 rounded-full">
+                    <GraduationCap className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">Masters of Science: Information Technology</h3>
+                    <p className="text-muted-foreground">Carnegie Mellon Univeristy Africa (2025)</p>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-muted-foreground">
+                    Completed a degree in Information Technology specializing in software engineering, took courses in Advanced Database Management, Agile Methdology, Software Engineering, DevOps,Machine Learning and Distributed Systems.
+                  </p>
+                </div>
+
               </CardContent>
             </Card>
           </div>

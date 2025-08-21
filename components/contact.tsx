@@ -9,14 +9,14 @@ export default function Contact() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      value: "contact@nihal.com.np",
-      link: "mailto:contact@nihal.com.np",
+      value: "greenfield@bbridge.biz",
+      link: "mailto:greenfield@bbridge.biz",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Location",
-      value: "Kathmandu, Nepal",
-      link: "https://maps.google.com/?q=Kathmandu,Nepal",
+      value: "Monrovia, Liberia",
+      link: "https://www.google.com/maps/place/%D9%85%D9%88%D9%86%D8%B1%D9%88%D9%81%D9%8A%D8%A7%D8%8C+%D9%84%D9%8A%D8%A8%D9%8A%D8%B1%D9%8A%D8%A7%E2%80%AD/@6.2954515,-10.7490784,14z/data=!3m1!4b1!4m6!3m5!1s0xf09f803d4a9fcc1:0x5b6c4dd7069694af!8m2!3d6.3156068!4d-10.8073698!16zL20vMDFweHF4?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
@@ -34,7 +34,7 @@ export default function Contact() {
             <div className="space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+                Want to collaborate, have questions, or just want to say hi? Feel free to reach out!
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export default function Contact() {
                     <p className="text-sm text-muted-foreground mb-4">Find me on these platforms</p>
                     <div className="flex gap-4">
                       <Button variant="outline" size="icon" asChild>
-                        <a href="https://github.com/maskeynihal" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/greenfieldO" target="_blank" rel="noopener noreferrer">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -138,7 +138,7 @@ export default function Contact() {
                         </a>
                       </Button>
                       <Button variant="outline" size="icon" asChild>
-                        <a href="https://linkedin.com/in/maskeynihal" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/greenfield-obasi" target="_blank" rel="noopener noreferrer">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -159,7 +159,7 @@ export default function Contact() {
                         </a>
                       </Button>
                       <Button variant="outline" size="icon" asChild>
-                        <a href="mailto:contact@nihal.com.np">
+                        <a href="mailto:greenfield@bbridge.biz">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"

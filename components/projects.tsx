@@ -7,35 +7,30 @@ import OpenSource from "./open-source"
 export default function Projects() {
   const projects = [
     {
-      title: "Pacman",
+      title: "SIM Registration System Digitization",
       description:
-        "A recreation of the classic Pacman game with vanilla JavaScript, implementing various path-finding algorithms for ghost movement.",
-      tags: ["JavaScript", "Canvas API", "Path-finding Algorithms"],
-      codeLink: "https://github.com/maskeynihal/pacman",
-      liveLink: "https://maskeynihal.github.io/pacman/",
+        "Built a web-based prototype that digitizes the entire registration workflow",
+      tags: ["JavaScript", "Canvas API", "UI/UX Design"],
+      codeLink: "https://github.com/GreenfieldO/DIGITIZATION-PROTOTYPE",
+      liveLink: "https://lonestarsimregistration.netlify.app/",
     },
+
     {
-      title: "Flappy Bird",
-      description: "A clone of the popular Flappy Bird game built with vanilla JavaScript and HTML5 Canvas.",
-      tags: ["JavaScript", "Canvas API", "Game Development"],
-      codeLink: "https://github.com/maskeynihal/flappy-bird",
-      liveLink: "https://maskeynihal.github.io/flappy-bird/",
+      title: "Cross-Platform Mobile Application",
+      description: "The Institute of Certified Public Accountants in Uganda needed a cross-platform mobile solution: Led a team of 3 engineers to deliver a full mobile app on schedule.",
+      tags: ["JavaScript", "React Native", "REST APIs", "Team Leadership"],
+      codeLink: "https://github.com/GreenfieldO/ICPAU-App",
+      liveLink: "https://www.figma.com/proto/DTKtUCXXhfF7RF50T9uIQS/ICPAU-Application-Design?node-id=204-71&t=1FktW3jemPLgdABJ-1",
     },
+
     {
-      title: "Pursue - Job Handling with AWS",
-      description:
-        "A JavaScript package for handling job processing using AWS services like SQS, Lambda, and Step Functions.",
-      tags: ["Node.js", "AWS", "SQS", "Lambda", "npm package"],
-      codeLink: "https://github.com/maskeynihal/pursue",
+      title: "PDF Q&A AI Chatbot",
+      description: "The Institute of Certified Public Accountants in Uganda needed a cross-platform mobile solution: Led a team of 3 engineers to deliver a full mobile app on schedule.",
+      tags: ["JavaScript", "React Native", "REST APIs", "Team Leadership"],
+      codeLink: "https://github.com/GreenfieldO/PDF-QA-CHATBOT",
       liveLink: null,
     },
-    {
-      title: "Mailer",
-      description: "A JavaScript package to prepare and send emails using AWS SES, with templating support.",
-      tags: ["Node.js", "AWS", "SES", "Email Templates", "npm package"],
-      codeLink: "https://github.com/maskeynihal/mailer",
-      liveLink: null,
-    },
+
   ]
 
   return (
@@ -43,7 +38,7 @@ export default function Projects() {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="space-y-12">
           <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sample Projects</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               A selection of my personal and professional projects
             </p>

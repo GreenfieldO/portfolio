@@ -5,80 +5,52 @@ import Skills from "./skills-content"
 export default function Experience() {
   const experiences = [
     {
-      title: "Lead Engineer",
-      company: "Leapfrog Technology / Trayt Health",
-      period: "Jan 2025 - Present",
-      location: "Kathmandu, Nepal",
+      title: "Founder/CEO",
+      company: "ByteBridge Systems Liberia",
+      period: "Aug 2025 - Present",
+      location: "Monrovia, Liberia",
       achievements: [
-        "Leading the engineering team in developing innovative healthcare solutions for Trayt Health",
-        "Architecting scalable and secure systems for handling sensitive healthcare data",
-        "Implementing advanced AWS infrastructure for high availability and compliance",
-        "Mentoring junior engineers and establishing best practices for code quality and security",
-        "Collaborating with product and design teams to deliver exceptional user experiences",
+        "Leading the development of a classifed-ads websiteas well as an internet forum",
+      
+      ],
+    },
+
+    {
+      title: "Founding Software Engineer/Tech Lead- Backend",
+      company: "KAMERO LTD - A software Development Company focused on research digitization",
+      period: "May 2024 - Dec 2024",
+      location: "Kigali, Rwanda",
+      achievements: [
+        "Provided strategic guidance on the overall design and functionality of the web application.",
+        "Designed and implemented a scalable backend Infrastructure for authentication and validation.",
       ],
     },
     {
-      title: "Senior Software Engineer",
-      company: "Leapfrog Technology / Trayt Health",
-      period: "July 2023 - Jan 2025",
-      location: "Kathmandu, Nepal",
+      title: "Graduate Trainee",
+      company: "Lonestar Cell MTN",
+      period: "Dec 2021 - Jul 2023",
+      location: "Monrovia, Liberia,",
       achievements: [
-        "Coordinated development efforts with remote teams across the US, Australia, and Nepal to deliver complex healthcare solutions for Trayt Health",
-        "Reduced the frontend bundle size by 20% through advanced optimization techniques",
-        "Optimized backend API performance, achieving over 200% faster response times",
-        "Leveraged AWS services (SQS, EventBridge, Lambda, Step Functions) to automate critical tasks",
-        "Mentored and coached team members, accelerating onboarding and enhancing team productivity",
+        "Built a web-based prototype to digitize the existing Manual Sim Registration process to help reduce costs and increase user convenience and flexibility.",
+        "Created an automated analysis workbook for Call Detail Records (CDRs) and balance sheet reconciliation, reducing analysis time and errors by 85%.",
+        "Led the closure of 200+ user acceptance test cases on new service delivery platforms, collaborating across geographies and managing internal bureaucracy for approvals with limited resources",
+        "Managed a Key platform (Kapptivate) for monitoring and alerting the various platforms connected to it, ensuring daily, hourly, and minute logs.",
       ],
     },
-    {
-      title: "Software Engineer",
-      company: "Leapfrog Technology",
-      period: "Sep 2021 - July 2023",
-      location: "Kathmandu, Nepal",
-      achievements: [
-        "Led and managed a diverse software development team comprising over 15 members",
-        "Designed and implemented solutions that consistently exceeded performance benchmarks",
-        "Streamlined project planning by working closely with product owners",
-        "Orchestrated the successful release of major application versions",
-        "Emerged as the primary point of contact for both project stakeholders and management",
-      ],
-    },
-    {
-      title: "Associate Software Engineer",
-      company: "Leapfrog Technology",
-      period: "Sep 2020 - Sep 2021",
-      location: "Kathmandu, Nepal",
-      achievements: [
-        "Collaborated with senior developers and product owners to deliver high-quality applications",
-        "Employed a meticulous approach to debugging code and identifying root causes of issues",
-        "Contributed to system improvement efforts by conducting thorough system analysis",
-        "Played a pivotal role in enhancing system performance through strategic optimization",
-        "Innovatively designed and developed a browser extension, streamlining workflow processes",
-      ],
-    },
+
     {
       title: "Software Engineer Intern",
-      company: "Leapfrog Technology",
-      period: "Jun 2020 - Sep 2020",
-      location: "Kathmandu, Nepal",
+      company: "Lonestar Cell MTN",
+      period: "Jun 2021 - Nov 2021",
+      location: "Monrovia, Liberia",
       achievements: [
-        "Acquired proficiency in JavaScript and harnessed the browser canvas API",
-        "Recreated Pac-man game with vanilla JS while integrating various path-finding algorithms",
-        "Successfully delved into backend development with Node.js and honed frontend skills with React.js",
+        "Developed a web-based prototype to digitize the existing Manual Sim Registration process, reducing costs and increasing user convenience.",
+        "Created an automated analysis workbook for Call Detail Records (CDRs) and balance sheet reconciliation, reducing analysis time and errors by 85%.",
+        "Led the closure of 200+ user acceptance test cases on new service delivery platforms, collaborating across geographies and managing internal bureaucracy for approvals with limited resources.",
+        "Managed a key platform (Kapptivate) for monitoring and alerting various connected platforms, ensuring daily, hourly, and minute logs.",
       ],
     },
-    {
-      title: "Web Application Developer",
-      company: "Technorio Inc.",
-      period: "Jan 2019 - Jun 2020",
-      location: "Kathmandu, Nepal",
-      achievements: [
-        "Delivered projects across diverse industries, including insurance management, video streaming, and ticket management",
-        "Collaborated closely with the business development team, offering engineering insights",
-        "Utilized GitHub actions to automate deployment pipelines",
-        "Applied server deployment expertise to successfully launch a range of web applications",
-      ],
-    },
+
   ]
 
   return (
