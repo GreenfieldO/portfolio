@@ -4,75 +4,265 @@
 
 @layer base {
   :root {
-    /* Cyberpunk Neon Theme - Light Mode */
-    --background: 0 0% 98%;
-    --foreground: 270 15% 15%;
-    --card: 0 0% 100%;
-    --card-foreground: 270 15% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 270 15% 15%;
+    /* Custom Olive Garden Theme - Light Mode */
+    /* Using your exact color palette */
+    --background: 0 0% 98%;          /* Clean white background */
+    --foreground: 67 48% 22%;        /* #393c18 - darkest olive for main text */
+    --card: 71 31% 73%;              /* #ccd0a3 - lightest olive for cards */
+    --card-foreground: 67 48% 22%;   /* Dark olive text on cards */
+    --popover: 71 31% 73%;           /* Light olive popover */
+    --popover-foreground: 67 48% 22%;
     
-    /* Electric cyan primary */
-    --primary: 180 100% 50%;        /* Bright cyan/aqua */
-    --primary-foreground: 270 20% 10%; /* Deep purple-black */
+    /* Primary using your medium olive */
+    --primary: 70 23% 44%;           /* #838856 - medium olive */
+    --primary-foreground: 0 0% 98%;  /* White text on olive */
     
-    /* Secondary with purple tint */
-    --secondary: 270 30% 92%;       /* Light purple-gray */
-    --secondary-foreground: 270 40% 20%; /* Dark purple */
+    /* Secondary using your light-medium olive */
+    --secondary: 69 26% 60%;         /* #adb27e - light-medium olive */
+    --secondary-foreground: 67 48% 22%; /* Dark olive text */
     
-    /* Muted colors */
-    --muted: 270 20% 95%;           /* Very light purple */
-    --muted-foreground: 270 25% 45%; /* Medium purple-gray */
+    /* Muted using lightest olive */
+    --muted: 71 31% 73%;             /* #ccd0a3 - lightest olive */
+    --muted-foreground: 68 30% 33%;  /* #595d32 - dark-medium for readability */
     
-    /* Hot pink accent */
-    --accent: 320 100% 80%;         /* Bright hot pink */
-    --accent-foreground: 270 30% 15%; /* Dark purple */
+    /* Accent using a slightly warmer variation */
+    --accent: 69 26% 60%;            /* #adb27e - light-medium olive */
+    --accent-foreground: 67 48% 22%; /* Dark olive text */
     
-    /* Status colors */
-    --destructive: 0 100% 60%;      /* Pure red */
+    /* Status colors - keeping red but softened to match palette */
+    --destructive: 0 65% 45%;        /* Muted red to harmonize */
     --destructive-foreground: 0 0% 98%;
     
-    /* Borders with cyan tint */
-    --border: 180 30% 85%;          /* Soft cyan border */
-    --input: 180 30% 90%;           /* Light cyan input */
-    --ring: 180 100% 50%;           /* Cyan focus ring */
+    /* Borders using your light-medium olive */
+    --border: 69 26% 60%;            /* #adb27e - creates subtle definition */
+    --input: 71 31% 73%;             /* #ccd0a3 - light olive input background */
+    --ring: 70 23% 44%;              /* #838856 - medium olive focus ring */
     
     --radius: 0.5rem;
     --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
   }
 
   .dark {
-    /* Cyberpunk Dark Mode - True neon aesthetic */
-    --background: 270 25% 8%;       /* Deep purple-black */
-    --foreground: 180 100% 85%;     /* Bright cyan text */
-    --card: 270 25% 12%;            /* Slightly lighter dark */
-    --card-foreground: 180 100% 85%;
-    --popover: 270 25% 8%;
-    --popover-foreground: 180 100% 85%;
+    /* Dark Mode - Deep olive atmosphere */
+    --background: 67 48% 12%;        /* Darker than #393c18 for background */
+    --foreground: 71 31% 73%;        /* #ccd0a3 - light olive for text */
+    --card: 67 48% 15%;              /* Slightly lighter than background */
+    --card-foreground: 71 31% 73%;   /* Light olive text on cards */
+    --popover: 67 48% 12%;           /* Match background */
+    --popover-foreground: 71 31% 73%;
     
-    /* Glowing cyan primary */
-    --primary: 180 100% 60%;        /* Electric cyan */
-    --primary-foreground: 270 25% 8%; /* Dark background */
+    /* Brighter primary for dark mode visibility */
+    --primary: 69 26% 60%;           /* #adb27e - light-medium olive */
+    --primary-foreground: 67 48% 12%; /* Dark background for contrast */
     
-    /* Purple-tinted secondary */
-    --secondary: 270 40% 18%;       /* Dark purple */
-    --secondary-foreground: 320 100% 80%; /* Hot pink text */
+    /* Secondary using medium olive */
+    --secondary: 70 23% 25%;         /* Darker variation for secondary */
+    --secondary-foreground: 71 31% 73%; /* Light olive text */
     
-    /* Muted with purple base */
-    --muted: 270 30% 15%;           /* Dark purple */
-    --muted-foreground: 270 20% 70%; /* Light purple */
+    /* Dark mode muted */
+    --muted: 68 30% 20%;             /* Between #595d32 and #393c18 */
+    --muted-foreground: 69 26% 60%;  /* #adb27e for readable muted text */
     
-    /* Neon pink accent */
-    --accent: 320 100% 70%;         /* Hot pink */
-    --accent-foreground: 270 25% 8%; /* Dark text */
+    /* Accent with good contrast */
+    --accent: 70 23% 44%;            /* #838856 - medium olive */
+    --accent-foreground: 71 31% 73%; /* Light olive text */
     
-    /* Status colors */
-    --destructive: 0 100% 65%;      /* Bright red */
-    --destructive-foreground: 270 25% 8%;
+    /* Status colors for dark mode */
+    --destructive: 0 60% 55%;        /* Slightly brighter red for visibility */
+    --destructive-foreground: 71 31% 73%;
     
-    /* Glowing borders */
-    --border: 180 50% 25%;          /* Dark cyan border */
-    --input: 270 30% 15%;           /* Dark purple input */
-    --ring: 180 100% 60%;           /* Bright cyan ring */
+    /* Dark mode borders */
+    --border: 68 30% 33%;            /* #595d32 - dark-medium olive */
+    --input: 67 48% 15%;             /* Slightly lighter than background */
+    --ring: 69 26% 60%;              /* #adb27e - bright ring for focus */
   }
+}
+
+/* Enhanced styles that work beautifully with olive tones */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-mono);
+    padding-top: 4rem;
+  }
+}
+
+/* Your existing animations with olive harmony */
+.animate-in {
+  animation: animateIn 0.5s ease-in-out;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-item {
+  @apply relative pl-8 pb-12;
+}
+
+.timeline-item::before {
+  content: "";
+  @apply absolute left-0 top-1 h-4 w-4 rounded-full bg-primary;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 1.25rem;
+  height: 100%;
+  width: 2px;
+  background-color: hsl(var(--border));
+}
+
+.timeline-item:last-child::after {
+  height: 2rem;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent;
+}
+
+.skill-card {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+}
+
+/* Animated background with your olive tones */
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.3; /* Slightly more subtle for earthy tones */
+  pointer-events: none;
+}
+
+.animated-background .blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px); /* More blur for softer, natural effect */
+  transition: transform 4s ease-out; /* Slower, more organic movement */
+}
+
+.animated-background .blob-1 {
+  background-color: hsl(var(--primary) / 25%);
+  width: 450px;
+  height: 450px;
+  top: 15%;
+  left: 8%;
+}
+
+.animated-background .blob-2 {
+  background-color: hsl(var(--accent) / 20%);
+  width: 350px;
+  height: 350px;
+  top: 55%;
+  right: 12%;
+}
+
+.animated-background .blob-3 {
+  background-color: hsl(var(--muted) / 30%);
+  width: 250px;
+  height: 250px;
+  bottom: 8%;
+  left: 25%;
+}
+
+.project-card {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.project-content {
+  @apply p-4;
+}
+
+.project-tags {
+  @apply flex flex-wrap gap-1;
+}
+
+.project-tag {
+  @apply text-xs bg-primary/10 px-2 py-1 rounded-full;
+}
+
+.project-links {
+  @apply flex gap-2;
+}
+
+.nav-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: hsl(var(--primary));
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item.active::after {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.timeline-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+.timeline-item::before {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  transform: scale(1.2);
+  background-color: hsl(var(--primary) / 90%);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Enhanced glassmorphism with olive tones */
+header.scrolled {
+  background-color: hsl(var(--card) / 80%); /* Using your light olive */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid hsl(var(--border) / 30%);
+}
+
+.dark header.scrolled {
+  background-color: hsl(var(--card) / 70%);
+  border-bottom: 1px solid hsl(var(--border) / 20%);
 }
