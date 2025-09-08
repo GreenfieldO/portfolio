@@ -4,75 +4,75 @@
 
 @layer base {
   :root {
-    /* Midnight Rose Theme - Light Mode */
-    --background: 340 15% 98%;      /* Soft rose white */
-    --foreground: 240 20% 20%;      /* Deep blue-gray */
-    --card: 340 20% 96%;            /* Light rose */
-    --card-foreground: 240 20% 20%;
-    --popover: 340 20% 96%;
-    --popover-foreground: 240 20% 20%;
+    /* Autumn Warmth Theme - Light Mode */
+    --background: 35 25% 98%;       /* Warm white */
+    --foreground: 25 25% 15%;       /* Deep brown */
+    --card: 35 30% 96%;             /* Cream white */
+    --card-foreground: 25 25% 15%;
+    --popover: 35 30% 96%;
+    --popover-foreground: 25 25% 15%;
     
-    /* Rose gold primary */
-    --primary: 15 60% 65%;          /* Rose gold */
-    --primary-foreground: 340 30% 10%; /* Very dark rose */
+    /* Rich amber primary */
+    --primary: 35 85% 55%;          /* Golden amber */
+    --primary-foreground: 25 30% 10%; /* Very dark brown */
     
-    /* Soft lavender secondary */
-    --secondary: 280 25% 88%;       /* Light lavender */
-    --secondary-foreground: 240 30% 25%; /* Dark blue-gray */
+    /* Warm beige secondary */
+    --secondary: 30 25% 88%;        /* Light warm beige */
+    --secondary-foreground: 25 35% 25%; /* Medium brown */
     
-    /* Muted rose tones */
-    --muted: 320 15% 92%;           /* Very light rose */
-    --muted-foreground: 240 15% 45%; /* Medium gray */
+    /* Muted earth tones */
+    --muted: 30 20% 92%;            /* Very light beige */
+    --muted-foreground: 25 20% 45%; /* Medium earth tone */
     
-    /* Deep rose accent */
-    --accent: 340 70% 70%;          /* Soft rose */
-    --accent-foreground: 240 25% 15%; /* Dark text */
+    /* Burnt orange accent */
+    --accent: 15 80% 65%;           /* Burnt orange */
+    --accent-foreground: 25 30% 15%; /* Dark brown */
     
     /* Status colors */
-    --destructive: 0 75% 55%;       /* Classic red */
+    --destructive: 5 85% 55%;       /* Warm red */
     --destructive-foreground: 0 0% 98%;
     
-    /* Rose-tinted borders */
-    --border: 320 20% 85%;          /* Light rose border */
-    --input: 320 20% 90%;           /* Very light rose input */
-    --ring: 15 60% 65%;             /* Rose gold focus */
+    /* Warm borders */
+    --border: 30 25% 82%;           /* Light brown border */
+    --input: 30 25% 88%;            /* Light beige input */
+    --ring: 35 85% 55%;             /* Amber focus ring */
     
     --radius: 0.5rem;
     --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
   }
 
   .dark {
-    /* Midnight Rose Dark Mode - Luxury aesthetic */
-    --background: 240 25% 6%;       /* Deep midnight blue */
-    --foreground: 15 30% 85%;       /* Warm rose-gold text */
-    --card: 240 20% 10%;            /* Dark blue-gray card */
-    --card-foreground: 15 30% 85%;
-    --popover: 240 25% 6%;
-    --popover-foreground: 15 30% 85%;
+    /* Autumn Dark Mode - Rich and cozy */
+    --background: 25 30% 8%;        /* Deep chocolate brown */
+    --foreground: 35 40% 85%;       /* Warm cream text */
+    --card: 25 25% 12%;             /* Dark brown card */
+    --card-foreground: 35 40% 85%;
+    --popover: 25 30% 8%;
+    --popover-foreground: 35 40% 85%;
     
-    /* Glowing rose gold primary */
-    --primary: 15 80% 70%;          /* Bright rose gold */
-    --primary-foreground: 240 25% 6%; /* Dark background */
+    /* Glowing amber primary */
+    --primary: 35 90% 60%;          /* Bright amber */
+    --primary-foreground: 25 30% 8%; /* Dark brown */
     
-    /* Deep purple secondary */
-    --secondary: 280 30% 15%;       /* Dark purple */
-    --secondary-foreground: 340 60% 75%; /* Light rose */
+    /* Rich brown secondary */
+    --secondary: 25 35% 18%;        /* Medium dark brown */
+    --secondary-foreground: 35 50% 80%; /* Light amber */
     
-    /* Sophisticated muted tones */
-    --muted: 250 20% 12%;           /* Dark blue-gray */
-    --muted-foreground: 280 20% 65%; /* Medium lavender */
+    /* Warm muted tones */
+    --muted: 25 25% 15%;            /* Dark brown */
+    --muted-foreground: 30 30% 65%; /* Medium warm gray */
     
-    /* Rich rose accent */
-    --accent: 340 60% 55%;          /* Deep rose */
-    --accent-foreground: 240 25% 6%; /* Dark text */
+    /* Warm accent */
+    --accent: 15 75% 55%;           /* Warm orange */
+    --accent-foreground: 25 30% 8%; /* Dark text */
     
     /* Status colors */
-    --destructive: 0 70% 60%;       /* Rich red */
-    --destructive-foreground: 240 25% 6%;
+    --destructive: 5 80% 60%;       /* Warm red */
+    --destructive-foreground: 25 30% 8%;
     
-    /* Elegant borders */
-    --border: 250 25% 18%;          /* Dark blue-gray border */
-    --input: 250 20% 12%;           /* Dark input */
-    --ring: 15 80% 70%;             /* Rose gold ring */
+    /* Rich borders */
+    --border: 25 30% 22%;           /* Medium brown border */
+    --input: 25 25% 15%;            /* Dark brown input */
+    --ring: 35 90% 60%;             /* Bright amber ring */
   }
 }
