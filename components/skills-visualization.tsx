@@ -163,7 +163,6 @@ export default function SkillsVisualization() {
           description: "Query optimization, indexing, transactions, and stored procedures",
         },
         
-
         {
           name: "PostgreSQL",
           level: "Advanced",
@@ -216,7 +215,7 @@ export default function SkillsVisualization() {
           percentage: 85,
           description: "Lambda, SQS, EventBridge, Step Functions, and serverless architecture",
         },
-        
+
         {
           name: "GitHub Actions",
           level: "Advanced",
@@ -289,7 +288,7 @@ export default function SkillsVisualization() {
           description: "Sprint planning, daily standups, and team facilitation",
         },
         {
-          name: "Porject Management",
+          name: "Project Management",
           level: "Advanced",
           percentage: 80,
           description: "Project tracking, workflow customization, and reporting",
