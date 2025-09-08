@@ -4,54 +4,80 @@
 
 @layer base {
   :root {
-    --background: 260 60% 98%;
-    --foreground: 260 30% 20%;
-    --card: 260 40% 95%;
-    --card-foreground: 260 30% 20%;
-    --popover: 260 40% 95%;
-    --popover-foreground: 260 30% 20%;
-    --primary: 222 100% 70%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 262 45% 56%;
-    --secondary-foreground: 260 30% 20%;
-    --muted: 260 20% 90%;
-    --muted-foreground: 260 10% 40%;
-    --accent: 289 45% 58%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 260 30% 85%;
-    --input: 260 30% 85%;
-    --ring: 222 100% 70%;
+    /* Ocean Blue Theme */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    
+    /* Primary colors - Ocean Blue */
+    --primary: 215 100% 60%;        /* Bright ocean blue */
+    --primary-foreground: 0 0% 98%; /* Clean white text */
+    
+    /* Secondary colors */
+    --secondary: 210 40% 95%;       /* Very light blue-gray */
+    --secondary-foreground: 215 25% 20%; /* Dark blue-gray */
+    
+    /* Muted colors */
+    --muted: 210 40% 96%;           /* Subtle blue tint */
+    --muted-foreground: 215 20% 50%; /* Medium blue-gray */
+    
+    /* Accent colors */
+    --accent: 200 100% 90%;         /* Light sky blue */
+    --accent-foreground: 215 100% 25%; /* Deep blue */
+    
+    /* Status colors */
+    --destructive: 0 84.2% 60.2%;   /* Error red */
+    --destructive-foreground: 0 0% 98%; /* White text */
+    
+    /* Border and input colors */
+    --border: 215 30% 85%;          /* Soft blue border */
+    --input: 215 30% 90%;           /* Light blue input bg */
+    --ring: 215 100% 60%;           /* Focus ring matches primary */
+    
     --radius: 0.5rem;
-    --font-mono:
-      "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .dark {
-    --background: 260 30% 10%;
-    --foreground: 0 0% 95%;
-    --card: 260 30% 15%;
-    --card-foreground: 0 0% 95%;
-    --popover: 260 30% 15%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 222 100% 70%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 262 45% 56%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 260 20% 20%;
-    --muted-foreground: 260 10% 60%;
-    --accent: 289 45% 58%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
-    --border: 260 20% 30%;
-    --input: 260 20% 30%;
-    --ring: 222 100% 70%;
+    /* Dark mode - Ocean Blue Theme */
+    --background: 220 25% 6%;       /* Deep ocean dark */
+    --foreground: 210 40% 95%;      /* Light blue-white */
+    --card: 220 25% 8%;             /* Slightly lighter dark */
+    --card-foreground: 210 40% 95%; /* Light blue-white */
+    --popover: 220 25% 6%;          /* Matches background */
+    --popover-foreground: 210 40% 95%; /* Light blue-white */
+    
+    /* Primary colors remain vibrant in dark mode */
+    --primary: 215 100% 65%;        /* Slightly brighter blue */
+    --primary-foreground: 220 25% 6%; /* Dark background text */
+    
+    /* Secondary colors for dark mode */
+    --secondary: 220 20% 15%;       /* Dark blue-gray */
+    --secondary-foreground: 210 40% 90%; /* Light blue-gray */
+    
+    /* Muted colors for dark mode */
+    --muted: 220 20% 12%;           /* Very dark blue */
+    --muted-foreground: 215 25% 65%; /* Medium light blue */
+    
+    /* Accent colors for dark mode */
+    --accent: 200 50% 20%;          /* Dark accent */
+    --accent-foreground: 200 100% 85%; /* Light accent text */
+    
+    /* Status colors for dark mode */
+    --destructive: 0 80% 55%;       /* Slightly muted red */
+    --destructive-foreground: 0 85.7% 97.3%; /* Light red text */
+    
+    /* Border and input colors for dark mode */
+    --border: 220 20% 18%;          /* Dark border */
+    --input: 220 20% 15%;           /* Dark input background */
+    --ring: 215 100% 65%;           /* Bright focus ring */
   }
 }
 
-
+/* Your existing base styles remain the same */
 @layer base {
   * {
     @apply border-border;
@@ -59,10 +85,11 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-mono);
-    padding-top: 4rem; /* 64px, matches the header height */
+    padding-top: 4rem;
   }
 }
 
+/* All your existing animations and custom styles remain unchanged */
 .animate-in {
   animation: animateIn 0.5s ease-in-out;
 }
@@ -151,7 +178,6 @@
   left: 20%;
 }
 
-/* Project card styles - updated without images */
 .project-card {
   @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
 }
@@ -172,7 +198,6 @@
   @apply flex gap-2;
 }
 
-/* Navigation animations */
 .nav-item {
   position: relative;
   transition: all 0.3s ease;
@@ -197,12 +222,10 @@
   width: 100%;
 }
 
-/* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
 }
 
-/* Enhanced timeline animations */
 .timeline-item {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -220,7 +243,6 @@ html {
   background-color: hsl(var(--primary) / 80%);
 }
 
-/* Ensure header is sticky */
 header {
   position: fixed;
   top: 0;
@@ -231,7 +253,6 @@ header {
   transition: all 0.3s ease;
 }
 
-/* Glassmorphism effect for header */
 header.scrolled {
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
