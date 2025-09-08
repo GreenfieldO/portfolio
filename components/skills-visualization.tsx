@@ -216,6 +216,7 @@ export default function SkillsVisualization() {
           percentage: 85,
           description: "Lambda, SQS, EventBridge, Step Functions, and serverless architecture",
         },
+        
         {
           name: "GitHub Actions",
           level: "Advanced",
@@ -240,6 +241,7 @@ export default function SkillsVisualization() {
           percentage: 80,
           description: "Containerization, multi-stage builds, and Docker Compose",
         },
+
         {
           name: "CI/CD",
           level: "Advanced",
