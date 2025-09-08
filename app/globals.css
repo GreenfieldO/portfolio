@@ -4,75 +4,75 @@
 
 @layer base {
   :root {
-    /* Sage Minimalist Theme - Light Mode */
-    --background: 120 15% 98%;      /* Pure white with hint of green */
-    --foreground: 150 15% 15%;      /* Deep charcoal green */
-    --card: 120 20% 96%;            /* Very light sage */
-    --card-foreground: 150 15% 15%;
-    --popover: 120 20% 96%;
-    --popover-foreground: 150 15% 15%;
+    /* Midnight Rose Theme - Light Mode */
+    --background: 340 15% 98%;      /* Soft rose white */
+    --foreground: 240 20% 20%;      /* Deep blue-gray */
+    --card: 340 20% 96%;            /* Light rose */
+    --card-foreground: 240 20% 20%;
+    --popover: 340 20% 96%;
+    --popover-foreground: 240 20% 20%;
     
-    /* Soft sage green primary */
-    --primary: 130 30% 55%;         /* Muted sage green */
-    --primary-foreground: 0 0% 98%; /* Pure white text */
+    /* Rose gold primary */
+    --primary: 15 60% 65%;          /* Rose gold */
+    --primary-foreground: 340 30% 10%; /* Very dark rose */
     
-    /* Neutral gray secondary */
-    --secondary: 120 10% 90%;       /* Very light gray-green */
-    --secondary-foreground: 150 20% 25%; /* Dark green-gray */
+    /* Soft lavender secondary */
+    --secondary: 280 25% 88%;       /* Light lavender */
+    --secondary-foreground: 240 30% 25%; /* Dark blue-gray */
     
-    /* Ultra-minimal muted tones */
-    --muted: 120 8% 94%;            /* Almost white with green hint */
-    --muted-foreground: 150 10% 50%; /* Medium gray-green */
+    /* Muted rose tones */
+    --muted: 320 15% 92%;           /* Very light rose */
+    --muted-foreground: 240 15% 45%; /* Medium gray */
     
-    /* Soft eucalyptus accent */
-    --accent: 160 25% 75%;          /* Light eucalyptus */
-    --accent-foreground: 150 20% 20%; /* Dark green */
+    /* Deep rose accent */
+    --accent: 340 70% 70%;          /* Soft rose */
+    --accent-foreground: 240 25% 15%; /* Dark text */
     
-    /* Status colors - softened */
-    --destructive: 0 60% 55%;       /* Muted red */
+    /* Status colors */
+    --destructive: 0 75% 55%;       /* Classic red */
     --destructive-foreground: 0 0% 98%;
     
-    /* Barely-there borders */
-    --border: 120 15% 88%;          /* Very light sage border */
-    --input: 120 15% 92%;           /* Almost white input */
-    --ring: 130 30% 55%;            /* Sage focus ring */
+    /* Rose-tinted borders */
+    --border: 320 20% 85%;          /* Light rose border */
+    --input: 320 20% 90%;           /* Very light rose input */
+    --ring: 15 60% 65%;             /* Rose gold focus */
     
     --radius: 0.5rem;
     --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
   }
 
   .dark {
-    /* Sage Dark Mode - Natural night */
-    --background: 150 20% 8%;       /* Deep forest night */
-    --foreground: 120 25% 88%;      /* Soft sage text */
-    --card: 150 15% 12%;            /* Dark green-gray card */
-    --card-foreground: 120 25% 88%;
-    --popover: 150 20% 8%;
-    --popover-foreground: 120 25% 88%;
+    /* Midnight Rose Dark Mode - Luxury aesthetic */
+    --background: 240 25% 6%;       /* Deep midnight blue */
+    --foreground: 15 30% 85%;       /* Warm rose-gold text */
+    --card: 240 20% 10%;            /* Dark blue-gray card */
+    --card-foreground: 15 30% 85%;
+    --popover: 240 25% 6%;
+    --popover-foreground: 15 30% 85%;
     
-    /* Gentle sage primary */
-    --primary: 130 40% 65%;         /* Soft sage green */
-    --primary-foreground: 150 20% 8%; /* Dark background */
+    /* Glowing rose gold primary */
+    --primary: 15 80% 70%;          /* Bright rose gold */
+    --primary-foreground: 240 25% 6%; /* Dark background */
     
-    /* Natural secondary */
-    --secondary: 150 25% 16%;       /* Dark sage */
-    --secondary-foreground: 120 30% 80%; /* Light sage */
+    /* Deep purple secondary */
+    --secondary: 280 30% 15%;       /* Dark purple */
+    --secondary-foreground: 340 60% 75%; /* Light rose */
     
-    /* Organic muted tones */
-    --muted: 150 18% 14%;           /* Medium dark green */
-    --muted-foreground: 130 20% 65%; /* Medium sage */
+    /* Sophisticated muted tones */
+    --muted: 250 20% 12%;           /* Dark blue-gray */
+    --muted-foreground: 280 20% 65%; /* Medium lavender */
     
-    /* Eucalyptus accent */
-    --accent: 160 30% 45%;          /* Medium eucalyptus */
-    --accent-foreground: 150 20% 8%; /* Dark text */
+    /* Rich rose accent */
+    --accent: 340 60% 55%;          /* Deep rose */
+    --accent-foreground: 240 25% 6%; /* Dark text */
     
     /* Status colors */
-    --destructive: 0 65% 50%;       /* Natural red */
-    --destructive-foreground: 150 20% 8%;
+    --destructive: 0 70% 60%;       /* Rich red */
+    --destructive-foreground: 240 25% 6%;
     
-    /* Natural borders */
-    --border: 150 20% 20%;          /* Medium dark border */
-    --input: 150 18% 14%;           /* Dark green input */
-    --ring: 130 40% 65%;            /* Sage ring */
+    /* Elegant borders */
+    --border: 250 25% 18%;          /* Dark blue-gray border */
+    --input: 250 20% 12%;           /* Dark input */
+    --ring: 15 80% 70%;             /* Rose gold ring */
   }
 }
