@@ -1,5 +1,4 @@
 "use client"
-
 import type React from "react"
 import { Mona_Sans as FontSans } from "next/font/google"
 import "./globals.css"
@@ -35,6 +34,7 @@ export default function ClientLayout({
             font-family: var(--font-mono);
           }
         `}</style>
+
       </head>
       <body className={cn("min-h-screen bg-background font-mono antialiased", fontSans.variable)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
@@ -46,6 +46,7 @@ export default function ClientLayout({
             </noscript>
             <AnimatedBackground />
             <Header />
+
             <main className="flex-1 relative z-10">{children}</main>
             <Footer />
           </div>
