@@ -303,6 +303,7 @@ export default function SkillsVisualization() {
     },
   ]
 
+  
   const handleCategoryClick = (category: string) => {
     setActiveCategory(activeCategory === category ? null : category)
   }
