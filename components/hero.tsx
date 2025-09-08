@@ -43,7 +43,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://linkedin.com/in/greenfieldO" target="_blank" rel="noopener noreferrer">
+              <Link href="https://linkedin.com/in/greenfield-obasi" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
