@@ -4,262 +4,75 @@
 
 @layer base {
   :root {
-    /* Ocean Blue Theme */
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    /* Electric Violet Theme - Light Mode */
+    --background: 280 20% 98%;      /* Light violet tint */
+    --foreground: 260 25% 15%;      /* Deep purple */
+    --card: 280 25% 96%;            /* Very light violet */
+    --card-foreground: 260 25% 15%;
+    --popover: 280 25% 96%;
+    --popover-foreground: 260 25% 15%;
     
-    /* Primary colors - Ocean Blue */
-    --primary: 215 100% 60%;        /* Bright ocean blue */
-    --primary-foreground: 0 0% 98%; /* Clean white text */
+    /* Vibrant violet primary */
+    --primary: 270 100% 65%;        /* Electric violet */
+    --primary-foreground: 0 0% 98%; /* Pure white text */
     
-    /* Secondary colors */
-    --secondary: 210 40% 95%;       /* Very light blue-gray */
-    --secondary-foreground: 215 25% 20%; /* Dark blue-gray */
+    /* Soft lavender secondary */
+    --secondary: 280 30% 88%;       /* Light lavender */
+    --secondary-foreground: 260 35% 25%; /* Dark purple */
     
-    /* Muted colors */
-    --muted: 210 40% 96%;           /* Subtle blue tint */
-    --muted-foreground: 215 20% 50%; /* Medium blue-gray */
+    /* Purple-tinted muted */
+    --muted: 280 20% 92%;           /* Very light purple */
+    --muted-foreground: 260 20% 45%; /* Medium purple */
     
-    /* Accent colors */
-    --accent: 200 100% 90%;         /* Light sky blue */
-    --accent-foreground: 215 100% 25%; /* Deep blue */
+    /* Magenta accent */
+    --accent: 300 80% 70%;          /* Bright magenta */
+    --accent-foreground: 260 30% 15%; /* Dark purple */
     
     /* Status colors */
-    --destructive: 0 84.2% 60.2%;   /* Error red */
-    --destructive-foreground: 0 0% 98%; /* White text */
+    --destructive: 0 85% 60%;       /* Vivid red */
+    --destructive-foreground: 0 0% 98%;
     
-    /* Border and input colors */
-    --border: 215 30% 85%;          /* Soft blue border */
-    --input: 215 30% 90%;           /* Light blue input bg */
-    --ring: 215 100% 60%;           /* Focus ring matches primary */
+    /* Purple borders */
+    --border: 280 25% 85%;          /* Light purple border */
+    --input: 280 25% 90%;           /* Very light purple input */
+    --ring: 270 100% 65%;           /* Electric violet ring */
     
     --radius: 0.5rem;
-    --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
   }
 
   .dark {
-    /* Dark mode - Ocean Blue Theme */
-    --background: 220 25% 6%;       /* Deep ocean dark */
-    --foreground: 210 40% 95%;      /* Light blue-white */
-    --card: 220 25% 8%;             /* Slightly lighter dark */
-    --card-foreground: 210 40% 95%; /* Light blue-white */
-    --popover: 220 25% 6%;          /* Matches background */
-    --popover-foreground: 210 40% 95%; /* Light blue-white */
+    /* Electric Violet Dark Mode - Neon nightclub */
+    --background: 260 30% 6%;       /* Very dark purple */
+    --foreground: 280 50% 90%;      /* Bright violet text */
+    --card: 260 25% 10%;            /* Dark purple card */
+    --card-foreground: 280 50% 90%;
+    --popover: 260 30% 6%;
+    --popover-foreground: 280 50% 90%;
     
-    /* Primary colors remain vibrant in dark mode */
-    --primary: 215 100% 65%;        /* Slightly brighter blue */
-    --primary-foreground: 220 25% 6%; /* Dark background text */
+    /* Glowing violet primary */
+    --primary: 270 100% 70%;        /* Bright electric violet */
+    --primary-foreground: 260 30% 6%; /* Dark background */
     
-    /* Secondary colors for dark mode */
-    --secondary: 220 20% 15%;       /* Dark blue-gray */
-    --secondary-foreground: 210 40% 90%; /* Light blue-gray */
+    /* Rich purple secondary */
+    --secondary: 270 40% 18%;       /* Medium dark purple */
+    --secondary-foreground: 300 80% 80%; /* Light magenta */
     
-    /* Muted colors for dark mode */
-    --muted: 220 20% 12%;           /* Very dark blue */
-    --muted-foreground: 215 25% 65%; /* Medium light blue */
+    /* Deep purple muted */
+    --muted: 260 30% 12%;           /* Dark purple */
+    --muted-foreground: 280 40% 70%; /* Medium violet */
     
-    /* Accent colors for dark mode */
-    --accent: 200 50% 20%;          /* Dark accent */
-    --accent-foreground: 200 100% 85%; /* Light accent text */
+    /* Neon magenta accent */
+    --accent: 300 100% 75%;         /* Bright neon magenta */
+    --accent-foreground: 260 30% 6%; /* Dark text */
     
-    /* Status colors for dark mode */
-    --destructive: 0 80% 55%;       /* Slightly muted red */
-    --destructive-foreground: 0 85.7% 97.3%; /* Light red text */
+    /* Status colors */
+    --destructive: 0 90% 65%;       /* Bright red */
+    --destructive-foreground: 260 30% 6%;
     
-    /* Border and input colors for dark mode */
-    --border: 220 20% 18%;          /* Dark border */
-    --input: 220 20% 15%;           /* Dark input background */
-    --ring: 215 100% 65%;           /* Bright focus ring */
+    /* Glowing borders */
+    --border: 270 40% 22%;          /* Medium purple border */
+    --input: 260 30% 12%;           /* Dark purple input */
+    --ring: 270 100% 70%;           /* Electric violet ring */
   }
-}
-
-/* Your existing base styles remain the same */
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-mono);
-    padding-top: 4rem;
-  }
-}
-
-/* All your existing animations and custom styles remain unchanged */
-.animate-in {
-  animation: animateIn 0.5s ease-in-out;
-}
-
-@keyframes animateIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.timeline-item {
-  @apply relative pl-8 pb-12;
-}
-
-.timeline-item::before {
-  content: "";
-  @apply absolute left-0 top-1 h-4 w-4 rounded-full bg-primary;
-}
-
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  left: 7px;
-  top: 1.25rem;
-  height: 100%;
-  width: 2px;
-  background-color: hsl(var(--border));
-}
-
-.timeline-item:last-child::after {
-  height: 2rem;
-}
-
-.gradient-text {
-  @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent;
-}
-
-.skill-card {
-  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
-}
-
-.animated-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.animated-background .blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  transition: transform 3s ease-out;
-}
-
-.animated-background .blob-1 {
-  background-color: hsl(var(--primary) / 30%);
-  width: 400px;
-  height: 400px;
-  top: 20%;
-  left: 10%;
-}
-
-.animated-background .blob-2 {
-  background-color: hsl(var(--primary) / 20%);
-  width: 300px;
-  height: 300px;
-  top: 60%;
-  right: 15%;
-}
-
-.animated-background .blob-3 {
-  background-color: hsl(var(--primary) / 15%);
-  width: 200px;
-  height: 200px;
-  bottom: 10%;
-  left: 20%;
-}
-
-.project-card {
-  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
-}
-
-.project-content {
-  @apply p-4;
-}
-
-.project-tags {
-  @apply flex flex-wrap gap-1;
-}
-
-.project-tag {
-  @apply text-xs bg-primary/10 px-2 py-1 rounded-full;
-}
-
-.project-links {
-  @apply flex gap-2;
-}
-
-.nav-item {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.nav-item::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: hsl(var(--primary));
-  transition: width 0.3s ease;
-}
-
-.nav-item:hover::after {
-  width: 100%;
-}
-
-.nav-item.active::after {
-  width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.timeline-item {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.timeline-item:hover {
-  transform: translateX(5px);
-}
-
-.timeline-item::before {
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.timeline-item:hover::before {
-  transform: scale(1.2);
-  background-color: hsl(var(--primary) / 80%);
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.dark header.scrolled {
-  background-color: rgba(0, 0, 0, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
