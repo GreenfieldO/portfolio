@@ -4,265 +4,75 @@
 
 @layer base {
   :root {
-    /* Custom Olive Garden Theme - Light Mode */
-    /* Using your exact color palette */
-    --background: 0 0% 98%;          /* Clean white background */
-    --foreground: 67 48% 22%;        /* #393c18 - darkest olive for main text */
-    --card: 71 31% 73%;              /* #ccd0a3 - lightest olive for cards */
-    --card-foreground: 67 48% 22%;   /* Dark olive text on cards */
-    --popover: 71 31% 73%;           /* Light olive popover */
-    --popover-foreground: 67 48% 22%;
+    /* Sage Minimalist Theme - Light Mode */
+    --background: 120 15% 98%;      /* Pure white with hint of green */
+    --foreground: 150 15% 15%;      /* Deep charcoal green */
+    --card: 120 20% 96%;            /* Very light sage */
+    --card-foreground: 150 15% 15%;
+    --popover: 120 20% 96%;
+    --popover-foreground: 150 15% 15%;
     
-    /* Primary using your medium olive */
-    --primary: 70 23% 44%;           /* #838856 - medium olive */
-    --primary-foreground: 0 0% 98%;  /* White text on olive */
+    /* Soft sage green primary */
+    --primary: 130 30% 55%;         /* Muted sage green */
+    --primary-foreground: 0 0% 98%; /* Pure white text */
     
-    /* Secondary using your light-medium olive */
-    --secondary: 69 26% 60%;         /* #adb27e - light-medium olive */
-    --secondary-foreground: 67 48% 22%; /* Dark olive text */
+    /* Neutral gray secondary */
+    --secondary: 120 10% 90%;       /* Very light gray-green */
+    --secondary-foreground: 150 20% 25%; /* Dark green-gray */
     
-    /* Muted using lightest olive */
-    --muted: 71 31% 73%;             /* #ccd0a3 - lightest olive */
-    --muted-foreground: 68 30% 33%;  /* #595d32 - dark-medium for readability */
+    /* Ultra-minimal muted tones */
+    --muted: 120 8% 94%;            /* Almost white with green hint */
+    --muted-foreground: 150 10% 50%; /* Medium gray-green */
     
-    /* Accent using a slightly warmer variation */
-    --accent: 69 26% 60%;            /* #adb27e - light-medium olive */
-    --accent-foreground: 67 48% 22%; /* Dark olive text */
+    /* Soft eucalyptus accent */
+    --accent: 160 25% 75%;          /* Light eucalyptus */
+    --accent-foreground: 150 20% 20%; /* Dark green */
     
-    /* Status colors - keeping red but softened to match palette */
-    --destructive: 0 65% 45%;        /* Muted red to harmonize */
+    /* Status colors - softened */
+    --destructive: 0 60% 55%;       /* Muted red */
     --destructive-foreground: 0 0% 98%;
     
-    /* Borders using your light-medium olive */
-    --border: 69 26% 60%;            /* #adb27e - creates subtle definition */
-    --input: 71 31% 73%;             /* #ccd0a3 - light olive input background */
-    --ring: 70 23% 44%;              /* #838856 - medium olive focus ring */
+    /* Barely-there borders */
+    --border: 120 15% 88%;          /* Very light sage border */
+    --input: 120 15% 92%;           /* Almost white input */
+    --ring: 130 30% 55%;            /* Sage focus ring */
     
     --radius: 0.5rem;
     --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
   }
 
   .dark {
-    /* Dark Mode - Deep olive atmosphere */
-    --background: 67 48% 12%;        /* Darker than #393c18 for background */
-    --foreground: 71 31% 73%;        /* #ccd0a3 - light olive for text */
-    --card: 67 48% 15%;              /* Slightly lighter than background */
-    --card-foreground: 71 31% 73%;   /* Light olive text on cards */
-    --popover: 67 48% 12%;           /* Match background */
-    --popover-foreground: 71 31% 73%;
+    /* Sage Dark Mode - Natural night */
+    --background: 150 20% 8%;       /* Deep forest night */
+    --foreground: 120 25% 88%;      /* Soft sage text */
+    --card: 150 15% 12%;            /* Dark green-gray card */
+    --card-foreground: 120 25% 88%;
+    --popover: 150 20% 8%;
+    --popover-foreground: 120 25% 88%;
     
-    /* Brighter primary for dark mode visibility */
-    --primary: 69 26% 60%;           /* #adb27e - light-medium olive */
-    --primary-foreground: 67 48% 12%; /* Dark background for contrast */
+    /* Gentle sage primary */
+    --primary: 130 40% 65%;         /* Soft sage green */
+    --primary-foreground: 150 20% 8%; /* Dark background */
     
-    /* Secondary using medium olive */
-    --secondary: 70 23% 25%;         /* Darker variation for secondary */
-    --secondary-foreground: 71 31% 73%; /* Light olive text */
+    /* Natural secondary */
+    --secondary: 150 25% 16%;       /* Dark sage */
+    --secondary-foreground: 120 30% 80%; /* Light sage */
     
-    /* Dark mode muted */
-    --muted: 68 30% 20%;             /* Between #595d32 and #393c18 */
-    --muted-foreground: 69 26% 60%;  /* #adb27e for readable muted text */
+    /* Organic muted tones */
+    --muted: 150 18% 14%;           /* Medium dark green */
+    --muted-foreground: 130 20% 65%; /* Medium sage */
     
-    /* Accent with good contrast */
-    --accent: 70 23% 44%;            /* #838856 - medium olive */
-    --accent-foreground: 71 31% 73%; /* Light olive text */
+    /* Eucalyptus accent */
+    --accent: 160 30% 45%;          /* Medium eucalyptus */
+    --accent-foreground: 150 20% 8%; /* Dark text */
     
-    /* Status colors for dark mode */
-    --destructive: 0 60% 55%;        /* Slightly brighter red for visibility */
-    --destructive-foreground: 71 31% 73%;
+    /* Status colors */
+    --destructive: 0 65% 50%;       /* Natural red */
+    --destructive-foreground: 150 20% 8%;
     
-    /* Dark mode borders */
-    --border: 68 30% 33%;            /* #595d32 - dark-medium olive */
-    --input: 67 48% 15%;             /* Slightly lighter than background */
-    --ring: 69 26% 60%;              /* #adb27e - bright ring for focus */
+    /* Natural borders */
+    --border: 150 20% 20%;          /* Medium dark border */
+    --input: 150 18% 14%;           /* Dark green input */
+    --ring: 130 40% 65%;            /* Sage ring */
   }
-}
-
-/* Enhanced styles that work beautifully with olive tones */
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-mono);
-    padding-top: 4rem;
-  }
-}
-
-/* Your existing animations with olive harmony */
-.animate-in {
-  animation: animateIn 0.5s ease-in-out;
-}
-
-@keyframes animateIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.timeline-item {
-  @apply relative pl-8 pb-12;
-}
-
-.timeline-item::before {
-  content: "";
-  @apply absolute left-0 top-1 h-4 w-4 rounded-full bg-primary;
-}
-
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  left: 7px;
-  top: 1.25rem;
-  height: 100%;
-  width: 2px;
-  background-color: hsl(var(--border));
-}
-
-.timeline-item:last-child::after {
-  height: 2rem;
-}
-
-.gradient-text {
-  @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent;
-}
-
-.skill-card {
-  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
-}
-
-/* Animated background with your olive tones */
-.animated-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.3; /* Slightly more subtle for earthy tones */
-  pointer-events: none;
-}
-
-.animated-background .blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px); /* More blur for softer, natural effect */
-  transition: transform 4s ease-out; /* Slower, more organic movement */
-}
-
-.animated-background .blob-1 {
-  background-color: hsl(var(--primary) / 25%);
-  width: 450px;
-  height: 450px;
-  top: 15%;
-  left: 8%;
-}
-
-.animated-background .blob-2 {
-  background-color: hsl(var(--accent) / 20%);
-  width: 350px;
-  height: 350px;
-  top: 55%;
-  right: 12%;
-}
-
-.animated-background .blob-3 {
-  background-color: hsl(var(--muted) / 30%);
-  width: 250px;
-  height: 250px;
-  bottom: 8%;
-  left: 25%;
-}
-
-.project-card {
-  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
-}
-
-.project-content {
-  @apply p-4;
-}
-
-.project-tags {
-  @apply flex flex-wrap gap-1;
-}
-
-.project-tag {
-  @apply text-xs bg-primary/10 px-2 py-1 rounded-full;
-}
-
-.project-links {
-  @apply flex gap-2;
-}
-
-.nav-item {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.nav-item::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: hsl(var(--primary));
-  transition: width 0.3s ease;
-}
-
-.nav-item:hover::after {
-  width: 100%;
-}
-
-.nav-item.active::after {
-  width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.timeline-item {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.timeline-item:hover {
-  transform: translateX(5px);
-}
-
-.timeline-item::before {
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.timeline-item:hover::before {
-  transform: scale(1.2);
-  background-color: hsl(var(--primary) / 90%);
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-/* Enhanced glassmorphism with olive tones */
-header.scrolled {
-  background-color: hsl(var(--card) / 80%); /* Using your light olive */
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid hsl(var(--border) / 30%);
-}
-
-.dark header.scrolled {
-  background-color: hsl(var(--card) / 70%);
-  border-bottom: 1px solid hsl(var(--border) / 20%);
 }
