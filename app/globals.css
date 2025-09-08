@@ -4,75 +4,75 @@
 
 @layer base {
   :root {
-    /* Autumn Warmth Theme - Light Mode */
-    --background: 35 25% 98%;       /* Warm white */
-    --foreground: 25 25% 15%;       /* Deep brown */
-    --card: 35 30% 96%;             /* Cream white */
-    --card-foreground: 25 25% 15%;
-    --popover: 35 30% 96%;
-    --popover-foreground: 25 25% 15%;
+    /* Cyberpunk Neon Theme - Light Mode */
+    --background: 0 0% 98%;
+    --foreground: 270 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 270 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 15% 15%;
     
-    /* Rich amber primary */
-    --primary: 35 85% 55%;          /* Golden amber */
-    --primary-foreground: 25 30% 10%; /* Very dark brown */
+    /* Electric cyan primary */
+    --primary: 180 100% 50%;        /* Bright cyan/aqua */
+    --primary-foreground: 270 20% 10%; /* Deep purple-black */
     
-    /* Warm beige secondary */
-    --secondary: 30 25% 88%;        /* Light warm beige */
-    --secondary-foreground: 25 35% 25%; /* Medium brown */
+    /* Secondary with purple tint */
+    --secondary: 270 30% 92%;       /* Light purple-gray */
+    --secondary-foreground: 270 40% 20%; /* Dark purple */
     
-    /* Muted earth tones */
-    --muted: 30 20% 92%;            /* Very light beige */
-    --muted-foreground: 25 20% 45%; /* Medium earth tone */
+    /* Muted colors */
+    --muted: 270 20% 95%;           /* Very light purple */
+    --muted-foreground: 270 25% 45%; /* Medium purple-gray */
     
-    /* Burnt orange accent */
-    --accent: 15 80% 65%;           /* Burnt orange */
-    --accent-foreground: 25 30% 15%; /* Dark brown */
+    /* Hot pink accent */
+    --accent: 320 100% 80%;         /* Bright hot pink */
+    --accent-foreground: 270 30% 15%; /* Dark purple */
     
     /* Status colors */
-    --destructive: 5 85% 55%;       /* Warm red */
+    --destructive: 0 100% 60%;      /* Pure red */
     --destructive-foreground: 0 0% 98%;
     
-    /* Warm borders */
-    --border: 30 25% 82%;           /* Light brown border */
-    --input: 30 25% 88%;            /* Light beige input */
-    --ring: 35 85% 55%;             /* Amber focus ring */
+    /* Borders with cyan tint */
+    --border: 180 30% 85%;          /* Soft cyan border */
+    --input: 180 30% 90%;           /* Light cyan input */
+    --ring: 180 100% 50%;           /* Cyan focus ring */
     
     --radius: 0.5rem;
     --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
   }
 
   .dark {
-    /* Autumn Dark Mode - Rich and cozy */
-    --background: 25 30% 8%;        /* Deep chocolate brown */
-    --foreground: 35 40% 85%;       /* Warm cream text */
-    --card: 25 25% 12%;             /* Dark brown card */
-    --card-foreground: 35 40% 85%;
-    --popover: 25 30% 8%;
-    --popover-foreground: 35 40% 85%;
+    /* Cyberpunk Dark Mode - True neon aesthetic */
+    --background: 270 25% 8%;       /* Deep purple-black */
+    --foreground: 180 100% 85%;     /* Bright cyan text */
+    --card: 270 25% 12%;            /* Slightly lighter dark */
+    --card-foreground: 180 100% 85%;
+    --popover: 270 25% 8%;
+    --popover-foreground: 180 100% 85%;
     
-    /* Glowing amber primary */
-    --primary: 35 90% 60%;          /* Bright amber */
-    --primary-foreground: 25 30% 8%; /* Dark brown */
+    /* Glowing cyan primary */
+    --primary: 180 100% 60%;        /* Electric cyan */
+    --primary-foreground: 270 25% 8%; /* Dark background */
     
-    /* Rich brown secondary */
-    --secondary: 25 35% 18%;        /* Medium dark brown */
-    --secondary-foreground: 35 50% 80%; /* Light amber */
+    /* Purple-tinted secondary */
+    --secondary: 270 40% 18%;       /* Dark purple */
+    --secondary-foreground: 320 100% 80%; /* Hot pink text */
     
-    /* Warm muted tones */
-    --muted: 25 25% 15%;            /* Dark brown */
-    --muted-foreground: 30 30% 65%; /* Medium warm gray */
+    /* Muted with purple base */
+    --muted: 270 30% 15%;           /* Dark purple */
+    --muted-foreground: 270 20% 70%; /* Light purple */
     
-    /* Warm accent */
-    --accent: 15 75% 55%;           /* Warm orange */
-    --accent-foreground: 25 30% 8%; /* Dark text */
+    /* Neon pink accent */
+    --accent: 320 100% 70%;         /* Hot pink */
+    --accent-foreground: 270 25% 8%; /* Dark text */
     
     /* Status colors */
-    --destructive: 5 80% 60%;       /* Warm red */
-    --destructive-foreground: 25 30% 8%;
+    --destructive: 0 100% 65%;      /* Bright red */
+    --destructive-foreground: 270 25% 8%;
     
-    /* Rich borders */
-    --border: 25 30% 22%;           /* Medium brown border */
-    --input: 25 25% 15%;            /* Dark brown input */
-    --ring: 35 90% 60%;             /* Bright amber ring */
+    /* Glowing borders */
+    --border: 180 50% 25%;          /* Dark cyan border */
+    --input: 270 30% 15%;           /* Dark purple input */
+    --ring: 180 100% 60%;           /* Bright cyan ring */
   }
 }
