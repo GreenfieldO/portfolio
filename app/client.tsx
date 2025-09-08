@@ -25,6 +25,7 @@ export default function ClientLayout({
       <head>
         <NoScriptStyles />
         <link rel="manifest" href="/manifest.json" />
+        {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> */}
         <style jsx global>{`
           :root {
             --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
