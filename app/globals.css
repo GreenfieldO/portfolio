@@ -4,75 +4,75 @@
 
 @layer base {
   :root {
-    /* Electric Violet Theme - Light Mode */
-    --background: 280 20% 98%;      /* Light violet tint */
-    --foreground: 260 25% 15%;      /* Deep purple */
-    --card: 280 25% 96%;            /* Very light violet */
-    --card-foreground: 260 25% 15%;
-    --popover: 280 25% 96%;
-    --popover-foreground: 260 25% 15%;
+    /* Sage Minimalist Theme - Light Mode */
+    --background: 120 15% 98%;      /* Pure white with hint of green */
+    --foreground: 150 15% 15%;      /* Deep charcoal green */
+    --card: 120 20% 96%;            /* Very light sage */
+    --card-foreground: 150 15% 15%;
+    --popover: 120 20% 96%;
+    --popover-foreground: 150 15% 15%;
     
-    /* Vibrant violet primary */
-    --primary: 270 100% 65%;        /* Electric violet */
+    /* Soft sage green primary */
+    --primary: 130 30% 55%;         /* Muted sage green */
     --primary-foreground: 0 0% 98%; /* Pure white text */
     
-    /* Soft lavender secondary */
-    --secondary: 280 30% 88%;       /* Light lavender */
-    --secondary-foreground: 260 35% 25%; /* Dark purple */
+    /* Neutral gray secondary */
+    --secondary: 120 10% 90%;       /* Very light gray-green */
+    --secondary-foreground: 150 20% 25%; /* Dark green-gray */
     
-    /* Purple-tinted muted */
-    --muted: 280 20% 92%;           /* Very light purple */
-    --muted-foreground: 260 20% 45%; /* Medium purple */
+    /* Ultra-minimal muted tones */
+    --muted: 120 8% 94%;            /* Almost white with green hint */
+    --muted-foreground: 150 10% 50%; /* Medium gray-green */
     
-    /* Magenta accent */
-    --accent: 300 80% 70%;          /* Bright magenta */
-    --accent-foreground: 260 30% 15%; /* Dark purple */
+    /* Soft eucalyptus accent */
+    --accent: 160 25% 75%;          /* Light eucalyptus */
+    --accent-foreground: 150 20% 20%; /* Dark green */
     
-    /* Status colors */
-    --destructive: 0 85% 60%;       /* Vivid red */
+    /* Status colors - softened */
+    --destructive: 0 60% 55%;       /* Muted red */
     --destructive-foreground: 0 0% 98%;
     
-    /* Purple borders */
-    --border: 280 25% 85%;          /* Light purple border */
-    --input: 280 25% 90%;           /* Very light purple input */
-    --ring: 270 100% 65%;           /* Electric violet ring */
+    /* Barely-there borders */
+    --border: 120 15% 88%;          /* Very light sage border */
+    --input: 120 15% 92%;           /* Almost white input */
+    --ring: 130 30% 55%;            /* Sage focus ring */
     
     --radius: 0.5rem;
     --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
   }
 
   .dark {
-    /* Electric Violet Dark Mode - Neon nightclub */
-    --background: 260 30% 6%;       /* Very dark purple */
-    --foreground: 280 50% 90%;      /* Bright violet text */
-    --card: 260 25% 10%;            /* Dark purple card */
-    --card-foreground: 280 50% 90%;
-    --popover: 260 30% 6%;
-    --popover-foreground: 280 50% 90%;
+    /* Sage Dark Mode - Natural night */
+    --background: 150 20% 8%;       /* Deep forest night */
+    --foreground: 120 25% 88%;      /* Soft sage text */
+    --card: 150 15% 12%;            /* Dark green-gray card */
+    --card-foreground: 120 25% 88%;
+    --popover: 150 20% 8%;
+    --popover-foreground: 120 25% 88%;
     
-    /* Glowing violet primary */
-    --primary: 270 100% 70%;        /* Bright electric violet */
-    --primary-foreground: 260 30% 6%; /* Dark background */
+    /* Gentle sage primary */
+    --primary: 130 40% 65%;         /* Soft sage green */
+    --primary-foreground: 150 20% 8%; /* Dark background */
     
-    /* Rich purple secondary */
-    --secondary: 270 40% 18%;       /* Medium dark purple */
-    --secondary-foreground: 300 80% 80%; /* Light magenta */
+    /* Natural secondary */
+    --secondary: 150 25% 16%;       /* Dark sage */
+    --secondary-foreground: 120 30% 80%; /* Light sage */
     
-    /* Deep purple muted */
-    --muted: 260 30% 12%;           /* Dark purple */
-    --muted-foreground: 280 40% 70%; /* Medium violet */
+    /* Organic muted tones */
+    --muted: 150 18% 14%;           /* Medium dark green */
+    --muted-foreground: 130 20% 65%; /* Medium sage */
     
-    /* Neon magenta accent */
-    --accent: 300 100% 75%;         /* Bright neon magenta */
-    --accent-foreground: 260 30% 6%; /* Dark text */
+    /* Eucalyptus accent */
+    --accent: 160 30% 45%;          /* Medium eucalyptus */
+    --accent-foreground: 150 20% 8%; /* Dark text */
     
     /* Status colors */
-    --destructive: 0 90% 65%;       /* Bright red */
-    --destructive-foreground: 260 30% 6%;
+    --destructive: 0 65% 50%;       /* Natural red */
+    --destructive-foreground: 150 20% 8%;
     
-    /* Glowing borders */
-    --border: 270 40% 22%;          /* Medium purple border */
-    --input: 260 30% 12%;           /* Dark purple input */
-    --ring: 270 100% 70%;           /* Electric violet ring */
+    /* Natural borders */
+    --border: 150 20% 20%;          /* Medium dark border */
+    --input: 150 18% 14%;           /* Dark green input */
+    --ring: 130 40% 65%;            /* Sage ring */
   }
 }
